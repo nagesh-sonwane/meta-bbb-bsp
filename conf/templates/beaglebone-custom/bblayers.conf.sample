@@ -1,0 +1,17 @@
+## Copyright (c) 2026 Nagesh Sonwane <nagesh.sonwane@hotmail.com>
+## OEROOT is the directory containing the OpenEmbedded-Core (OE-Core) checkout.
+## This template expects the project layers alongside that checkout.
+BBLAYERS ?= " \
+  ##OEROOT##/meta \
+  ##OEROOT##/../meta-openembedded/meta-oe \
+  ##OEROOT##/../meta-openembedded/meta-perl \
+  ##OEROOT##/../meta-openembedded/meta-python \
+  ##OEROOT##/../meta-openembedded/meta-networking \
+  ##OEROOT##/../meta-openembedded/meta-webserver \
+  ##OEROOT##/../sources/meta-arm/meta-arm-toolchain \
+  ##OEROOT##/../sources/meta-arm/meta-arm \
+  ##OEROOT##/../sources/meta-ti/meta-ti-bsp \
+  ##OEROOT##/../sources/meta-ti/meta-beagle \
+  ##OEROOT##/../sources/meta-bbb-bsp \
+  ##OEROOT##/../sources/meta-custom-core \
+"

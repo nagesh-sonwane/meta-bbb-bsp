@@ -1,0 +1,17 @@
+## Copyright (c) 2026 Nagesh Sonwane <nagesh.sonwane@hotmail.com>
+MACHINE ??= "beaglebone-custom"
+
+# Select the TI 6.6 BSP profile instead of the default 6.12 profile.
+# TI_PREFERRED_BSP = "bb_org-6_6"
+
+DISTRO ?= "network-servers"
+DL_DIR ?= "${HOME}/yocto-folders/yocto-downloads"
+SSTATE_DIR ?= "${HOME}/yocto-folders/sstate-cache"
+LICENSE_FLAGS_ACCEPTED = "synaptics-killswitch"
+
+PACKAGE_CLASSES ?= "package_rpm"
+EXTRA_IMAGE_FEATURES ?= "debug-tweaks"
+USER_CLASSES ?= "buildstats"
+PATCHRESOLVE = "noop"
+
+CONF_VERSION = "2"
